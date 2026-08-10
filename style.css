@@ -25,6 +25,10 @@
 
 
 
+/* =========================================
+   RESET
+========================================= */
+
 * {
 
     margin: 0;
@@ -637,7 +641,7 @@ nav a:hover {
 
 
 /* =========================================
-   LEVEL / PROGRESS
+   LEVEL
 ========================================= */
 
 .progress-wrapper {
@@ -660,17 +664,57 @@ nav a:hover {
 
 
 
-.level-icon {
+/*
+    Контейнер имеет тот же размер,
+    который был у старой иконки Level.
+*/
+
+.level-icon-container {
 
     width: 42px;
 
     height: 42px;
 
+    min-width: 42px;
+
+    min-height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+}
+
+
+
+/*
+    PNG не растягивается на весь оригинальный
+    размер и не влияет на высоту строки.
+*/
+
+.level-icon {
+
     display: block;
 
-    flex-shrink: 0;
+    width: 38px;
+
+    height: 38px;
+
+    min-width: 38px;
+
+    min-height: 38px;
+
+    max-width: 38px;
+
+    max-height: 38px;
 
     object-fit: contain;
+
+    object-position: center;
 
 }
 
@@ -685,6 +729,8 @@ nav a:hover {
     gap: 2px;
 
     flex: 1;
+
+    min-width: 0;
 
 }
 
@@ -718,13 +764,25 @@ nav a:hover {
 
     font-size: 11px;
 
+    white-space: nowrap;
+
 }
 
 
 
+/* =========================================
+   PROGRESS BAR
+========================================= */
+
 .progress-track {
 
+    position: relative;
+
+    width: 100%;
+
     height: 5px;
+
+    min-height: 5px;
 
     margin-top: 14px;
 
@@ -738,23 +796,39 @@ nav a:hover {
 
 
 
+/*
+    Реальное заполнение.
+    Не зависит от height: 100%.
+*/
+
 .progress-value {
+
+    display: block;
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
 
     width: 100%;
 
-    height: 100%;
+    height: 5px;
 
-    border-radius: inherit;
+    min-height: 5px;
+
+    border-radius: 999px;
 
     background:
         linear-gradient(
             90deg,
-            #ff3d00,
-            #ff8a00
+            #ff3d00 0%,
+            #ff5500 45%,
+            #ff8a00 100%
         );
 
     box-shadow:
-        0 0 14px rgba(255, 85, 0, 0.3);
+        0 0 14px rgba(255, 85, 0, 0.35);
 
 }
 
