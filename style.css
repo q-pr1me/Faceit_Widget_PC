@@ -1,14 +1,21 @@
 :root {
+
     --background: #070707;
+
     --surface: #0d0d0d;
+
     --surface-light: #121212;
+
     --border: rgba(255, 255, 255, 0.08);
 
     --text: #f5f5f5;
+
     --muted: #8d8d8d;
+
     --muted-light: #b5b5b5;
 
     --accent: #ff5500;
+
     --accent-light: #ff7a35;
 
     --green: #37d67a;
@@ -17,20 +24,31 @@
 }
 
 
+
 * {
+
     margin: 0;
+
     padding: 0;
+
     box-sizing: border-box;
+
 }
+
 
 
 html {
+
     scroll-behavior: smooth;
+
 }
 
 
+
 body {
+
     background: var(--background);
+
     color: var(--text);
 
     font-family:
@@ -43,23 +61,31 @@ body {
     min-height: 100vh;
 
     overflow-x: hidden;
+
 }
+
 
 
 a {
+
     color: inherit;
+
     text-decoration: none;
+
 }
 
 
-/* ================================
+
+/* =========================================
    BACKGROUND
-================================ */
+========================================= */
 
 .background-glow {
+
     position: fixed;
 
     width: 600px;
+
     height: 600px;
 
     border-radius: 50%;
@@ -71,28 +97,39 @@ a {
     opacity: 0.055;
 
     pointer-events: none;
+
 }
+
 
 
 .glow-one {
+
     top: -250px;
+
     right: -150px;
+
 }
+
 
 
 .glow-two {
+
     bottom: -350px;
+
     left: -200px;
 
     opacity: 0.035;
+
 }
 
 
-/* ================================
+
+/* =========================================
    NAVBAR
-================================ */
+========================================= */
 
 .navbar {
+
     width: min(1180px, calc(100% - 48px));
 
     margin: 0 auto;
@@ -100,29 +137,43 @@ a {
     height: 86px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 
     border-bottom: 1px solid var(--border);
+
 }
+
 
 
 .brand {
+
     display: flex;
+
     align-items: center;
+
     gap: 12px;
 
     font-weight: 600;
+
     letter-spacing: -0.02em;
+
 }
 
 
+
 .brand-mark {
+
     width: 32px;
+
     height: 32px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     border-radius: 9px;
@@ -132,39 +183,54 @@ a {
     color: white;
 
     font-size: 15px;
+
     font-weight: 800;
 
-    box-shadow: 0 8px 30px rgba(255, 85, 0, 0.2);
+    box-shadow:
+        0 8px 30px rgba(255, 85, 0, 0.2);
+
 }
+
 
 
 nav {
+
     display: flex;
+
     align-items: center;
+
     gap: 30px;
+
 }
 
 
+
 nav a {
+
     color: var(--muted);
 
     font-size: 14px;
 
-    transition:
-        color 0.2s ease;
+    transition: color 0.2s ease;
+
 }
+
 
 
 nav a:hover {
+
     color: var(--text);
+
 }
 
 
-/* ================================
+
+/* =========================================
    HERO
-================================ */
+========================================= */
 
 .hero {
+
     width: min(1180px, calc(100% - 48px));
 
     min-height: 650px;
@@ -178,15 +244,21 @@ nav a:hover {
     align-items: center;
 
     gap: 80px;
+
 }
+
 
 
 .hero-content {
+
     max-width: 560px;
+
 }
 
 
+
 .badge {
+
     display: inline-flex;
 
     align-items: center;
@@ -206,11 +278,15 @@ nav a:hover {
     color: var(--muted-light);
 
     font-size: 12px;
+
 }
 
 
+
 .status-dot {
+
     width: 7px;
+
     height: 7px;
 
     border-radius: 50%;
@@ -219,10 +295,13 @@ nav a:hover {
 
     box-shadow:
         0 0 10px rgba(55, 214, 122, 0.5);
+
 }
 
 
+
 .hero h1 {
+
     font-size: clamp(48px, 5vw, 76px);
 
     line-height: 0.98;
@@ -230,15 +309,21 @@ nav a:hover {
     letter-spacing: -0.055em;
 
     font-weight: 750;
+
 }
+
 
 
 .hero h1 span {
+
     color: var(--muted);
+
 }
 
 
+
 .hero-description {
+
     margin-top: 30px;
 
     max-width: 510px;
@@ -248,19 +333,25 @@ nav a:hover {
     font-size: 17px;
 
     line-height: 1.7;
+
 }
 
 
+
 .hero-buttons {
+
     display: flex;
 
     gap: 12px;
 
     margin-top: 34px;
+
 }
 
 
+
 .button {
+
     padding: 13px 19px;
 
     border-radius: 10px;
@@ -273,57 +364,81 @@ nav a:hover {
         transform 0.2s ease,
         background 0.2s ease,
         border-color 0.2s ease;
+
 }
+
 
 
 .button:hover {
+
     transform: translateY(-2px);
+
 }
+
 
 
 .button.primary {
+
     background: var(--text);
+
     color: #080808;
+
 }
+
 
 
 .button.primary:hover {
+
     background: white;
+
 }
+
 
 
 .button.secondary {
+
     border: 1px solid var(--border);
 
     color: var(--muted-light);
+
 }
+
 
 
 .button.secondary:hover {
+
     border-color: rgba(255, 255, 255, 0.18);
 
     color: var(--text);
+
 }
 
 
-/* ================================
+
+/* =========================================
    WIDGET PREVIEW
-================================ */
+========================================= */
 
 .widget-area {
+
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
     position: relative;
+
 }
 
 
+
 .widget-shadow {
+
     position: absolute;
 
     width: 330px;
+
     height: 330px;
 
     border-radius: 50%;
@@ -333,10 +448,13 @@ nav a:hover {
     filter: blur(110px);
 
     opacity: 0.12;
+
 }
 
 
+
 .widget {
+
     position: relative;
 
     width: 350px;
@@ -363,24 +481,34 @@ nav a:hover {
         rotateY(-4deg)
         rotateX(2deg);
 
-    transition:
-        transform 0.5s ease;
+    transition: transform 0.5s ease;
+
 }
 
 
+
 .widget:hover {
+
     transform:
         perspective(1000px)
         rotateY(0deg)
         rotateX(0deg)
         translateY(-5px);
+
 }
 
 
+
+/* =========================================
+   WIDGET HEADER
+========================================= */
+
 .widget-header {
+
     display: flex;
 
     align-items: center;
+
     justify-content: space-between;
 
     color: var(--muted);
@@ -390,25 +518,35 @@ nav a:hover {
     font-weight: 700;
 
     letter-spacing: 0.12em;
+
 }
 
 
+
 .online-indicator {
+
     width: 22px;
+
     height: 22px;
 
     border-radius: 50%;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     background: rgba(55, 214, 122, 0.08);
+
 }
 
 
+
 .online-indicator span {
+
     width: 6px;
+
     height: 6px;
 
     border-radius: 50%;
@@ -417,10 +555,17 @@ nav a:hover {
 
     box-shadow:
         0 0 10px rgba(55, 214, 122, 0.7);
+
 }
 
 
+
+/* =========================================
+   ELO
+========================================= */
+
 .elo-section {
+
     display: flex;
 
     align-items: flex-end;
@@ -428,10 +573,13 @@ nav a:hover {
     gap: 14px;
 
     margin-top: 35px;
+
 }
 
 
+
 .elo-number {
+
     font-size: 64px;
 
     line-height: 0.9;
@@ -439,10 +587,13 @@ nav a:hover {
     font-weight: 750;
 
     letter-spacing: -0.06em;
+
 }
 
 
+
 .trend {
+
     display: flex;
 
     align-items: center;
@@ -456,15 +607,21 @@ nav a:hover {
     font-size: 14px;
 
     font-weight: 700;
+
 }
+
 
 
 .trend-arrow {
+
     font-size: 17px;
+
 }
 
 
+
 .elo-label {
+
     margin-top: 10px;
 
     color: #555;
@@ -474,50 +631,53 @@ nav a:hover {
     font-weight: 700;
 
     letter-spacing: 0.13em;
+
 }
 
 
-/* ================================
-   PROGRESS
-================================ */
+
+/* =========================================
+   LEVEL / PROGRESS
+========================================= */
 
 .progress-wrapper {
+
     margin-top: 42px;
+
 }
+
 
 
 .level-row {
+
     display: flex;
 
     align-items: center;
 
     gap: 11px;
+
 }
 
 
-.level-circle {
-    width: 38px;
-    height: 38px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.level-icon {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: block;
 
     flex-shrink: 0;
 
-    border-radius: 50%;
+    object-fit: contain;
 
-    background: #1b1b1b;
-
-    border: 1px solid rgba(255, 255, 255, 0.08);
-
-    font-size: 13px;
-
-    font-weight: 700;
 }
 
 
+
 .level-info {
+
     display: flex;
 
     flex-direction: column;
@@ -525,31 +685,45 @@ nav a:hover {
     gap: 2px;
 
     flex: 1;
+
 }
+
 
 
 .level-title {
+
     font-size: 13px;
 
     font-weight: 650;
+
 }
+
 
 
 .level-subtitle {
+
     color: #555;
 
     font-size: 10px;
+
+    letter-spacing: 0.04em;
+
 }
+
 
 
 .level-percent {
+
     color: #777;
 
     font-size: 11px;
+
 }
 
 
+
 .progress-track {
+
     height: 5px;
 
     margin-top: 14px;
@@ -559,11 +733,15 @@ nav a:hover {
     background: #1b1b1b;
 
     overflow: hidden;
+
 }
 
 
+
 .progress-value {
-    width: 82%;
+
+    width: 100%;
+
     height: 100%;
 
     border-radius: inherit;
@@ -577,17 +755,21 @@ nav a:hover {
 
     box-shadow:
         0 0 14px rgba(255, 85, 0, 0.3);
+
 }
 
 
-/* ================================
+
+/* =========================================
    WIDGET FOOTER
-================================ */
+========================================= */
 
 .widget-footer {
+
     display: flex;
 
     align-items: center;
+
     justify-content: space-between;
 
     margin-top: 25px;
@@ -599,33 +781,45 @@ nav a:hover {
     color: #4d4d4d;
 
     font-size: 10px;
+
 }
+
 
 
 .refresh-icon {
+
     font-size: 16px;
 
     color: #555;
+
 }
 
 
-/* ================================
-   SECTIONS
-================================ */
+
+/* =========================================
+   GENERAL SECTIONS
+========================================= */
 
 .section {
+
     width: min(1180px, calc(100% - 48px));
 
     margin: 100px auto 0;
+
 }
+
 
 
 .section-heading {
+
     max-width: 650px;
+
 }
 
 
+
 .section-label {
+
     color: var(--accent);
 
     font-size: 11px;
@@ -633,12 +827,15 @@ nav a:hover {
     font-weight: 750;
 
     letter-spacing: 0.16em;
+
 }
+
 
 
 .section-heading h2,
 .about-content h2,
 .status-card h2 {
+
     margin-top: 14px;
 
     font-size: clamp(34px, 4vw, 50px);
@@ -646,10 +843,13 @@ nav a:hover {
     line-height: 1.05;
 
     letter-spacing: -0.045em;
+
 }
 
 
+
 .section-heading p {
+
     margin-top: 20px;
 
     color: var(--muted);
@@ -657,14 +857,17 @@ nav a:hover {
     font-size: 16px;
 
     line-height: 1.7;
+
 }
 
 
-/* ================================
+
+/* =========================================
    FEATURES
-================================ */
+========================================= */
 
 .features-grid {
+
     display: grid;
 
     grid-template-columns:
@@ -673,10 +876,13 @@ nav a:hover {
     gap: 12px;
 
     margin-top: 50px;
+
 }
 
 
+
 .feature-card {
+
     min-height: 230px;
 
     padding: 25px;
@@ -691,24 +897,33 @@ nav a:hover {
         background 0.25s ease,
         transform 0.25s ease,
         border-color 0.25s ease;
+
 }
 
 
+
 .feature-card:hover {
+
     background: rgba(255, 255, 255, 0.035);
 
     border-color: rgba(255, 255, 255, 0.13);
 
     transform: translateY(-4px);
+
 }
 
 
+
 .feature-icon {
+
     width: 38px;
+
     height: 38px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     border-radius: 10px;
@@ -718,19 +933,25 @@ nav a:hover {
     color: var(--accent);
 
     font-size: 18px;
+
 }
 
 
+
 .feature-card h3 {
+
     margin-top: 35px;
 
     font-size: 16px;
 
     letter-spacing: -0.02em;
+
 }
 
 
+
 .feature-card p {
+
     margin-top: 10px;
 
     color: var(--muted);
@@ -738,21 +959,27 @@ nav a:hover {
     font-size: 13px;
 
     line-height: 1.65;
+
 }
 
 
-/* ================================
+
+/* =========================================
    ABOUT
-================================ */
+========================================= */
 
 .about-section {
+
     width: min(1180px, calc(100% - 48px));
 
     margin: 140px auto 0;
+
 }
 
 
+
 .about-card {
+
     display: grid;
 
     grid-template-columns: 1.3fr 1fr;
@@ -772,15 +999,21 @@ nav a:hover {
             transparent 35%
         ),
         var(--surface);
+
 }
+
 
 
 .about-content {
+
     max-width: 650px;
+
 }
 
 
+
 .about-content p {
+
     margin-top: 22px;
 
     max-width: 590px;
@@ -790,10 +1023,13 @@ nav a:hover {
     font-size: 15px;
 
     line-height: 1.75;
+
 }
 
 
+
 .tech-stack {
+
     display: grid;
 
     grid-template-columns:
@@ -802,10 +1038,13 @@ nav a:hover {
     gap: 10px;
 
     align-self: center;
+
 }
 
 
+
 .tech-item {
+
     padding: 22px 15px;
 
     text-align: center;
@@ -815,19 +1054,25 @@ nav a:hover {
     background: rgba(255, 255, 255, 0.025);
 
     border: 1px solid var(--border);
+
 }
 
 
+
 .tech-item span {
+
     display: block;
 
     font-size: 16px;
 
     font-weight: 700;
+
 }
 
 
+
 .tech-item small {
+
     display: block;
 
     margin-top: 6px;
@@ -835,24 +1080,31 @@ nav a:hover {
     color: #555;
 
     font-size: 10px;
+
 }
 
 
-/* ================================
+
+/* =========================================
    STATUS
-================================ */
+========================================= */
 
 .status-section {
+
     width: min(1180px, calc(100% - 48px));
 
     margin: 25px auto 120px;
+
 }
 
 
+
 .status-card {
+
     display: flex;
 
     align-items: center;
+
     justify-content: space-between;
 
     gap: 30px;
@@ -864,15 +1116,21 @@ nav a:hover {
     border: 1px solid var(--border);
 
     background: var(--surface);
+
 }
+
 
 
 .status-card h2 {
+
     font-size: 30px;
+
 }
 
 
+
 .status-card p {
+
     max-width: 600px;
 
     margin-top: 12px;
@@ -882,10 +1140,13 @@ nav a:hover {
     line-height: 1.6;
 
     font-size: 14px;
+
 }
 
 
+
 .status-badge {
+
     display: flex;
 
     align-items: center;
@@ -907,24 +1168,31 @@ nav a:hover {
     font-size: 12px;
 
     font-weight: 650;
+
 }
 
 
+
 .status-badge span {
+
     width: 7px;
+
     height: 7px;
 
     border-radius: 50%;
 
     background: var(--green);
+
 }
 
 
-/* ================================
+
+/* =========================================
    FOOTER
-================================ */
+========================================= */
 
 footer {
+
     width: min(1180px, calc(100% - 48px));
 
     margin: 0 auto;
@@ -941,26 +1209,35 @@ footer {
     align-items: start;
 
     gap: 40px;
+
 }
 
 
+
 .footer-brand {
+
     display: flex;
 
     align-items: center;
 
     gap: 11px;
+
 }
+
 
 
 .footer-brand strong {
+
     display: block;
 
     font-size: 13px;
+
 }
 
 
+
 .footer-brand span {
+
     display: block;
 
     margin-top: 3px;
@@ -968,10 +1245,13 @@ footer {
     color: #555;
 
     font-size: 10px;
+
 }
 
 
+
 .footer-links {
+
     display: flex;
 
     gap: 25px;
@@ -979,15 +1259,21 @@ footer {
     font-size: 12px;
 
     color: var(--muted);
+
 }
+
 
 
 .footer-links a:hover {
+
     color: var(--text);
+
 }
 
 
+
 .disclaimer {
+
     justify-self: end;
 
     max-width: 330px;
@@ -999,16 +1285,19 @@ footer {
     font-size: 10px;
 
     line-height: 1.6;
+
 }
 
 
-/* ================================
-   RESPONSIVE
-================================ */
+
+/* =========================================
+   TABLET
+========================================= */
 
 @media (max-width: 900px) {
 
     .hero {
+
         grid-template-columns: 1fr;
 
         padding-top: 70px;
@@ -1016,69 +1305,106 @@ footer {
         gap: 60px;
 
         text-align: center;
+
     }
+
 
 
     .hero-content {
+
         margin: auto;
+
     }
+
 
 
     .hero-description {
+
         margin-left: auto;
+
         margin-right: auto;
+
     }
+
 
 
     .hero-buttons {
+
         justify-content: center;
+
     }
+
 
 
     .widget {
+
         transform: none;
+
     }
+
 
 
     .features-grid {
+
         grid-template-columns:
             repeat(2, 1fr);
+
     }
+
 
 
     .about-card {
+
         grid-template-columns: 1fr;
 
         gap: 45px;
+
     }
+
 
 
     footer {
+
         grid-template-columns: 1fr;
 
         gap: 25px;
+
     }
 
 
+
     .disclaimer {
+
         justify-self: start;
 
         text-align: left;
+
     }
 
 }
 
 
+
+/* =========================================
+   MOBILE
+========================================= */
+
 @media (max-width: 600px) {
 
     .navbar {
+
         width: min(100% - 30px, 1180px);
+
     }
+
 
 
     nav {
+
         display: none;
+
     }
+
 
 
     .hero,
@@ -1086,70 +1412,105 @@ footer {
     .about-section,
     .status-section,
     footer {
+
         width: calc(100% - 30px);
+
     }
+
 
 
     .hero {
+
         padding-top: 50px;
 
         min-height: auto;
+
     }
+
 
 
     .hero h1 {
+
         font-size: 48px;
+
     }
+
 
 
     .hero-description {
+
         font-size: 15px;
+
     }
+
 
 
     .hero-buttons {
+
         flex-direction: column;
+
     }
+
 
 
     .button {
+
         text-align: center;
+
     }
+
 
 
     .widget {
+
         width: 100%;
 
         max-width: 350px;
+
     }
+
 
 
     .elo-number {
+
         font-size: 58px;
+
     }
+
 
 
     .features-grid {
+
         grid-template-columns: 1fr;
+
     }
+
 
 
     .about-card {
+
         padding: 30px;
+
     }
+
 
 
     .tech-stack {
+
         grid-template-columns: 1fr;
+
     }
 
 
+
     .status-card {
+
         flex-direction: column;
 
         align-items: flex-start;
 
         padding: 30px;
+
     }
 
 }
