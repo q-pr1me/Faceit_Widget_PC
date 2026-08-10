@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>FACEIT Widget — Desktop Statistics</title>
-    <meta name="description"
-          content="A lightweight unofficial desktop widget for displaying FACEIT CS2 statistics.">
+
+    <meta
+        name="description"
+        content="A lightweight unofficial desktop widget for displaying FACEIT CS2 statistics."
+    >
+
+    <meta name="theme-color" content="#070707">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -16,77 +21,136 @@
     <div class="background-glow glow-one"></div>
     <div class="background-glow glow-two"></div>
 
+
+    <!-- ================================
+         NAVIGATION
+    ================================= -->
+
     <header class="navbar">
-        <div class="brand">
+
+        <a
+            class="brand"
+            href="#"
+            aria-label="FACEIT Widget Home"
+        >
             <div class="brand-mark">F</div>
+
             <span>FACEIT Widget</span>
-        </div>
+        </a>
+
 
         <nav>
-            <a href="#features">Features</a>
-            <a href="#about">About</a>
-            <a href="#status">Status</a>
-            <a href="https://github.com/" target="_blank" rel="noopener">
+
+            <a href="#features">
+                Features
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#status">
+                Status
+            </a>
+
+            <a
+                href="https://github.com/q-pr1me/Faceit_Widget_PC"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 GitHub ↗
             </a>
+
         </nav>
+
     </header>
+
 
 
     <main>
 
-        <!-- HERO -->
+        <!-- ================================
+             HERO
+        ================================= -->
 
         <section class="hero">
 
             <div class="hero-content">
 
                 <div class="badge">
+
                     <span class="status-dot"></span>
+
                     Unofficial third-party project
+
                 </div>
+
 
                 <h1>
                     Your FACEIT stats.<br>
                     <span>Always in sight.</span>
                 </h1>
 
+
                 <p class="hero-description">
-                    A lightweight desktop widget for Windows that puts your
-                    FACEIT CS2 ELO, level and recent performance right on your desktop.
+                    A lightweight desktop widget for Windows that puts
+                    your FACEIT CS2 ELO, level and recent performance
+                    right on your desktop.
                 </p>
 
+
                 <div class="hero-buttons">
-                    <a class="button primary" href="#status">
+
+                    <a
+                        class="button primary"
+                        href="#status"
+                    >
                         Coming soon
                     </a>
 
-                    <a class="button secondary"
-                       href="https://github.com/"
-                       target="_blank"
-                       rel="noopener">
+
+                    <a
+                        class="button secondary"
+                        href="https://github.com/q-pr1me/Faceit_Widget_PC"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         View on GitHub
                     </a>
+
                 </div>
 
             </div>
 
 
-            <!-- WIDGET PREVIEW -->
+
+            <!-- ================================
+                 WIDGET PREVIEW
+            ================================= -->
 
             <div class="widget-area">
 
                 <div class="widget-shadow"></div>
 
+
                 <div class="widget">
 
                     <div class="widget-header">
-                        <span>CS2</span>
+
+                        <span>
+                            CS2
+                        </span>
+
 
                         <div class="online-indicator">
+
                             <span></span>
+
                         </div>
+
                     </div>
+
+
 
                     <div class="elo-section">
 
@@ -94,12 +158,21 @@
                             2487
                         </div>
 
+
                         <div class="trend">
-                            <span class="trend-arrow">↑</span>
-                            <span>27</span>
+
+                            <span class="trend-arrow">
+                                ↑
+                            </span>
+
+                            <span>
+                                27
+                            </span>
+
                         </div>
 
                     </div>
+
 
 
                     <div class="elo-label">
@@ -107,34 +180,66 @@
                     </div>
 
 
+
+                    <!-- LEVEL -->
+
                     <div class="progress-wrapper">
 
                         <div class="level-row">
-                            <div class="level-circle">
-                                10
-                            </div>
+
+                            <img
+                                class="level-icon"
+                                src="assets/faceit-level-10.png"
+                                alt="FACEIT Level 10"
+                            >
+
 
                             <div class="level-info">
-                                <span class="level-title">Level 10</span>
-                                <span class="level-subtitle">Competitive</span>
+
+                                <span class="level-title">
+                                    Level 10
+                                </span>
+
+                                <span class="level-subtitle">
+                                    MAX LEVEL
+                                </span>
+
                             </div>
 
-                            <span class="level-percent">82%</span>
+
+                            <span class="level-percent">
+                                100%
+                            </span>
+
                         </div>
 
+
+
+                        <!-- PROGRESS BAR -->
+
                         <div class="progress-track">
+
                             <div class="progress-value"></div>
+
                         </div>
 
                     </div>
 
 
+
+                    <!-- FOOTER -->
+
                     <div class="widget-footer">
-                        <span>Updated just now</span>
+
+                        <span>
+                            Updated just now
+                        </span>
+
 
                         <div class="refresh-icon">
                             ↻
                         </div>
+
                     </div>
 
                 </div>
@@ -144,9 +249,15 @@
         </section>
 
 
-        <!-- FEATURES -->
 
-        <section class="section" id="features">
+        <!-- ================================
+             FEATURES
+        ================================= -->
+
+        <section
+            class="section"
+            id="features"
+        >
 
             <div class="section-heading">
 
@@ -154,20 +265,26 @@
                     FEATURES
                 </span>
 
+
                 <h2>
                     Everything you need.<br>
                     Nothing you don't.
                 </h2>
 
+
                 <p>
-                    Designed to keep your competitive statistics visible
-                    without getting in the way.
+                    Designed to keep your competitive statistics
+                    visible without getting in the way.
                 </p>
 
             </div>
 
 
+
             <div class="features-grid">
+
+
+                <!-- FEATURE 1 -->
 
                 <article class="feature-card">
 
@@ -175,9 +292,11 @@
                         ↗
                     </div>
 
+
                     <h3>
                         ELO at a glance
                     </h3>
+
 
                     <p>
                         Your current FACEIT ELO is always visible,
@@ -187,15 +306,20 @@
                 </article>
 
 
+
+                <!-- FEATURE 2 -->
+
                 <article class="feature-card">
 
                     <div class="feature-icon">
                         ◉
                     </div>
 
+
                     <h3>
                         Level progress
                     </h3>
+
 
                     <p>
                         See your current FACEIT level and progress
@@ -205,15 +329,20 @@
                 </article>
 
 
+
+                <!-- FEATURE 3 -->
+
                 <article class="feature-card">
 
                     <div class="feature-icon">
                         ◌
                     </div>
 
+
                     <h3>
                         Lightweight
                     </h3>
+
 
                     <p>
                         A compact native Windows application designed
@@ -223,15 +352,20 @@
                 </article>
 
 
+
+                <!-- FEATURE 4 -->
+
                 <article class="feature-card">
 
                     <div class="feature-icon">
                         ⟳
                     </div>
 
+
                     <h3>
                         Automatic updates
                     </h3>
+
 
                     <p>
                         Statistics can be refreshed automatically,
@@ -245,9 +379,15 @@
         </section>
 
 
-        <!-- ABOUT -->
 
-        <section class="about-section" id="about">
+        <!-- ================================
+             ABOUT
+        ================================= -->
+
+        <section
+            class="about-section"
+            id="about"
+        >
 
             <div class="about-card">
 
@@ -257,16 +397,19 @@
                         THE PROJECT
                     </span>
 
+
                     <h2>
                         Built for players,<br>
                         not platforms.
                     </h2>
+
 
                     <p>
                         FACEIT Widget is an independent desktop project
                         focused on presenting competitive statistics in
                         a simple and unobtrusive way.
                     </p>
+
 
                     <p>
                         The application is being developed for Windows
@@ -277,21 +420,45 @@
                 </div>
 
 
+
                 <div class="tech-stack">
 
                     <div class="tech-item">
-                        <span>C#</span>
-                        <small>Language</small>
+
+                        <span>
+                            C#
+                        </span>
+
+                        <small>
+                            Language
+                        </small>
+
                     </div>
 
-                    <div class="tech-item">
-                        <span>WPF</span>
-                        <small>Desktop UI</small>
-                    </div>
 
                     <div class="tech-item">
-                        <span>API</span>
-                        <small>FACEIT Data API</small>
+
+                        <span>
+                            WPF
+                        </span>
+
+                        <small>
+                            Desktop UI
+                        </small>
+
+                    </div>
+
+
+                    <div class="tech-item">
+
+                        <span>
+                            API
+                        </span>
+
+                        <small>
+                            FACEIT Data API
+                        </small>
+
                     </div>
 
                 </div>
@@ -301,30 +468,44 @@
         </section>
 
 
-        <!-- STATUS -->
 
-        <section class="status-section" id="status">
+        <!-- ================================
+             STATUS
+        ================================= -->
+
+        <section
+            class="status-section"
+            id="status"
+        >
 
             <div class="status-card">
 
                 <div>
+
                     <span class="section-label">
                         PROJECT STATUS
                     </span>
+
 
                     <h2>
                         Currently in development.
                     </h2>
 
+
                     <p>
                         The widget is currently being developed and tested.
                         Releases will be published here when ready.
                     </p>
+
                 </div>
 
+
                 <div class="status-badge">
+
                     <span></span>
+
                     Development
+
                 </div>
 
             </div>
@@ -334,35 +515,59 @@
     </main>
 
 
-    <!-- FOOTER -->
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
 
     <footer>
 
+
         <div class="footer-brand">
-            <div class="brand-mark">F</div>
+
+            <div class="brand-mark">
+                F
+            </div>
+
 
             <div>
-                <strong>FACEIT Widget</strong>
-                <span>Unofficial desktop companion</span>
+
+                <strong>
+                    FACEIT Widget
+                </strong>
+
+
+                <span>
+                    Unofficial desktop widget
+                </span>
+
             </div>
+
         </div>
+
 
 
         <div class="footer-links">
 
-            <a href="https://github.com/"
-               target="_blank"
-               rel="noopener">
+            <a
+                href="https://github.com/q-pr1me/Faceit_Widget_PC"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 GitHub
             </a>
 
-            <a href="https://docs.faceit.com/"
-               target="_blank"
-               rel="noopener">
+
+            <a
+                href="https://docs.faceit.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 FACEIT API
             </a>
 
         </div>
+
 
 
         <div class="disclaimer">
