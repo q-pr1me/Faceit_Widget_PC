@@ -135,6 +135,8 @@
 
                 <div class="widget">
 
+                    <!-- HEADER -->
+
                     <div class="widget-header">
 
                         <span>
@@ -143,14 +145,14 @@
 
 
                         <div class="online-indicator">
-
                             <span></span>
-
                         </div>
 
                     </div>
 
 
+
+                    <!-- ELO -->
 
                     <div class="elo-section">
 
@@ -187,11 +189,15 @@
 
                         <div class="level-row">
 
-                            <img
-                                class="level-icon"
-                                src="assets/faceit-level-10.png"
-                                alt="FACEIT Level 10"
-                            >
+                            <div class="level-icon-container">
+
+                                <img
+                                    class="level-icon"
+                                    src="assets/faceit-level-10.png"
+                                    alt="FACEIT Level 10"
+                                >
+
+                            </div>
 
 
                             <div class="level-info">
@@ -215,9 +221,16 @@
 
 
 
-                        <!-- PROGRESS BAR -->
+                        <!-- 100% FILLED PROGRESS BAR -->
 
-                        <div class="progress-track">
+                        <div
+                            class="progress-track"
+                            role="progressbar"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            aria-valuenow="100"
+                            aria-label="FACEIT Level progress"
+                        >
 
                             <div class="progress-value"></div>
 
@@ -283,9 +296,6 @@
 
             <div class="features-grid">
 
-
-                <!-- FEATURE 1 -->
-
                 <article class="feature-card">
 
                     <div class="feature-icon">
@@ -306,8 +316,6 @@
                 </article>
 
 
-
-                <!-- FEATURE 2 -->
 
                 <article class="feature-card">
 
@@ -330,8 +338,6 @@
 
 
 
-                <!-- FEATURE 3 -->
-
                 <article class="feature-card">
 
                     <div class="feature-icon">
@@ -352,8 +358,6 @@
                 </article>
 
 
-
-                <!-- FEATURE 4 -->
 
                 <article class="feature-card">
 
@@ -521,7 +525,6 @@
     ================================= -->
 
     <footer>
-
 
         <div class="footer-brand">
 
